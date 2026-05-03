@@ -1,0 +1,25 @@
+.icon {
+  background: black;
+  color: white;
+  padding: 5px 10px;
+}
+.letter {
+  letter-spacing: 2px;
+}
+.icons i {
+  margin-left: 5px;
+}
+.icons {
+  text-align: right;
+  padding-right: 5px;
+}
+.info td {
+  padding-right: 30px;
+}
+.number {
+  color: red;
+  font-size: 24px;
+}
+.dp {
+  font-size: 14px;
+}
