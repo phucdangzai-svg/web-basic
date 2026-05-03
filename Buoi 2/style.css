@@ -23,3 +23,9 @@
 .dp {
   font-size: 14px;
 }
+.text {
+  font-size: 14px;
+  border-bottom: 3px solid red;
+  display: inline-block;
+  padding-bottom: 5px;
+}
