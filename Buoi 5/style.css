@@ -1,0 +1,18 @@
+a {
+  text-decoration: none;
+  position: relative;
+  color: black;
+}
+a::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 18px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: 1s;
+}
+a:hover::after {
+  width: 100%;
+}

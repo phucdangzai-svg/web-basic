@@ -1,151 +1,65 @@
-.header {
+.container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
+  gap: 20px;
 }
 
-.left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.box-lily {
+  position: relative;
+  width: 480px;
+  height: 360px;
+  background-color: #3085a3;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.icon {
-  background: black;
+.box-lily .image {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  transition:
+    opacity 0.35s,
+    transform 0.35s;
+}
+
+.box-lily .content {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
   color: white;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.letter {
-  letter-spacing: 2px;
-}
-.icons {
-  display: flex;
-  gap: 15px;
+  box-sizing: border-box;
 }
 
-.body {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 60px 40px;
-  gap: 80px;
+.box-lily .title {
+  margin: 0;
+  text-transform: uppercase;
+  transition: transform 0.35s;
+
+  transform: translateY(20px);
 }
 
-.number-box {
-  display: flex;
-  gap: 30px;
+.box-lily .description {
+  opacity: 0;
+  transition:
+    opacity 0.35s,
+    transform 0.35s;
+  transform: translateY(20px);
+  margin-top: 10px;
 }
 
-.colors {
-  color: red;
-}
-.about {
-  padding: 20px 40px;
-}
-.member {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
+.box-lily:hover .image {
+  opacity: 0.7;
+  transform: scale(1.1);
 }
 
-.member h6 {
-  border: 1px solid red;
-  padding: 12px 30px;
-  border-radius: 30px;
-  color: red;
+.box-lily:hover .title {
+  transform: translateY(0);
 }
 
-.skills-container,
-section {
-  padding: 40px;
-}
-
-h5 {
-  font-size: 14px;
-  letter-spacing: 1px;
-  border-bottom: 2px solid rgb(212, 64, 64);
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-}
-
-.skills {
-  display: flex;
-  gap: 100px;
-}
-
-.skill {
-  flex: 1;
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.tags span {
-  border: 1px solid #ddd;
-  padding: 8px 18px;
-  border-radius: 20px;
-  font-size: 13px;
-  color: #555;
-}
-
-.separator {
-  border: 0;
-  border-top: 1px solid #eee;
-  margin: 20px 40px;
-}
-
-.exp {
-  display: flex;
-  gap: 50px;
-}
-
-.exp-item {
-  flex: 1;
-}
-
-.exp-item .date {
-  font-size: 12px;
-  color: #999;
-  margin-bottom: 5px;
-}
-
-.exp-item h4 {
-  margin: 5px 0;
-  font-size: 18px;
-}
-
-.exp-item .role {
-  color: #666;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.exp-item .description {
-  font-size: 14px;
-  color: #888;
-  line-height: 1.6;
-}
-
-.exp-item ul {
-  padding-left: 20px;
-  margin-top: 15px;
-}
-
-.exp-item li {
-  font-size: 13px;
-  color: #777;
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-.section h4 {
-  color: #666;
+.box-lily:hover .description {
+  opacity: 1;
+  transform: translateY(0);
 }
