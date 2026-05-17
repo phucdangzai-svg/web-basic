@@ -1,0 +1,50 @@
+.container {
+  width: 500px;
+  height: 400px;
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  object-fit: cover;
+}
+.container:hover img {
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.paragraph {
+  position: absolute;
+  bottom: 120px;
+  padding: 30px;
+  color: white;
+}
+.parent {
+  opacity: 0;
+}
+.container:hover .parent {
+  opacity: 1;
+  /* transform: translateY(20px); */
+  transition: 0.5;
+}
+.content {
+  position: absolute;
+  bottom: 100px;
+  padding: 30px;
+  color: white;
+  transition: transform 0.5s;
+}
+.container:hover .content {
+  transform: translateY(20px);
+}
+
+/* .parent:hover .paragraph {
+  opacity: 1;
+  transition: 0.5s;
+} */

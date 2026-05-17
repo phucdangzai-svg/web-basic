@@ -1,18 +1,36 @@
-a {
-  text-decoration: none;
-  position: relative;
-  color: black;
+.container {
+  display: flex;
+  gap: 40px;
+  background-color: black;
+  color: white;
 }
-a::after {
+.title {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 10px 5px;
+  transition: all 0.3s;
+  background-color: black;
+}
+.title:hover {
+  color: bisque;
+  background-color: gray;
+  border-radius: 5px;
+}
+.title::after {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 18px;
-  width: 0;
-  height: 2px;
-  background-color: black;
-  transition: 1s;
+  height: 5px;
+  top: 30px;
+  left: 10px;
+
+  background-color: blue;
+  transition: 0.3s;
+  z-index: 1;
 }
-a:hover::after {
-  width: 100%;
+.title:hover::after {
+  width: 90%;
+}
+.content {
 }
