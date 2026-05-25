@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Btvn</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--  Màn hình 1 -->
+      <div class="screens">
+        <div class="screen">
+          <h2>màn hình 1</h2>
+
+          <div class="form-box">
+            <div class="input-group">
+              <input
+                type="text"
+                id="colorInput"
+                placeholder="vui lòng nhập mã màu"
+              />
+
+              <input
+                type="number"
+                id="widthInput"
+                placeholder="vui lòng nhập chiều ngang (w)"
+              />
+              <input
+                type="number"
+                id="heightInput"
+                placeholder="vui lòng nhập chiều dọc (h)"
+              />
+            </div>
+
+            <button type="button" id="submitBtn">Submit</button>
+          </div>
+        </div>
+
+        <!--  Màn hình 2 -->
+        <div class="screen hidden" id="screen2">
+          <h2>màn hình 2</h2>
+
+          <div class="form-box">
+            <div class="input-group">
+              <input type="text" id="showColor" readonly />
+              <input type="text" id="showWidth" readonly />
+              <input type="text" id="showHeight" readonly />
+            </div>
+
+            <button type="button">Submit</button>
+          </div>
+          <!--  cai hop chu nhat mau do -->
+          <div id="resultBox" class="result-box">
+            <div id="topSize" class="top-size"></div>
+
+            <div class="rectangle-row">
+              <div id="rectangle" class="rectangle">
+                <span id="colorText"></span>
+              </div>
+
+              <div id="rightSize" class="right-size"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
