@@ -149,6 +149,12 @@ h5 {
 .section h4 {
   color: #666;
 }
+.repair {
+  text-align: center;
+}
+.button {
+  background-color: blue;
+}
 @media (max-width: 768px) {
   .img {
     max-width: 100%;
@@ -213,5 +219,11 @@ h5 {
   .right,
   .about {
     text-align: left !important;
+  }
+  /* .repair {
+    text-align: center;
+  } */
+  button {
+    text-align: center;
   }
 }
