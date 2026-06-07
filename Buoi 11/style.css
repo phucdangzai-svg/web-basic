@@ -1,0 +1,37 @@
+.container {
+  background-color: black;
+  position: relative;
+  height: 50px;
+  width: 400px;
+}
+.content span {
+  color: white;
+  text-decoration: none;
+}
+.content {
+  display: flex;
+  height: 100%;
+  position: relative;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: black;
+}
+.menu-item {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  width: 100%;
+  background-color: #161617;
+
+  /* padding: 40px 160px; */
+}
+.menu-item a {
+  color: white;
+}
+
+.content .show {
+  visibility: visible;
+  transition: 20s;
+}
