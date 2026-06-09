@@ -82,6 +82,9 @@ h5 {
 .skill {
   flex: 1;
 }
+.other {
+  flex: 1;
+}
 
 .tags {
   display: flex;
